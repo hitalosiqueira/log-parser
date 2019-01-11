@@ -11,7 +11,7 @@ drivers_diff_to_first = []
 
 def parse():
   """ opens the log file in right mode """
-  """ for each line remove extra sapaces and dashes, spliting the items in a list """
+  """ for each line remove extra spaces and dashes, spliting the items in a list """
   """ append the items to the data array """
   log_file = open("./log.in", "r")
   log_file.readline()
@@ -62,7 +62,7 @@ def extract_avg_speed(code):
 
 """ tested """
 def extract_diff_to_first(code):
-  """ slices the array in order to get the race time(results[i][5]) for each driver that corresponds to the code """
+  """ slices the array in order to get the race time(results[i]['time']) for each driver that corresponds to the code """
   """ calculates the abs difference to the race winner and return a float with expected format """
   t = [results[i]['time'] for i in range(0, len(results)) if results[i]['code'] == code][0]
   return float(format(abs(results[0]['time'] - t), '.3f'))
