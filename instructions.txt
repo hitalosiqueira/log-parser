@@ -1,0 +1,8 @@
+Since the input data is represented by a log file, python was a natural choice.
+It's syntax really helps slicing arrays and the standard library has many useful helper functions.
+Once you got everything in place it's simple extract all the info required 
+
+To run the parser execute: python log_parser.py
+To run the tests execute: python test_log_parser.py
+
+This exercise was developed in python 3.7, but I believe it's compatible with any python 3.x version
